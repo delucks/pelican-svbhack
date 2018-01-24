@@ -11,7 +11,7 @@
 {% endblock %}
 
 {% block header %}
-&gt; Tag: {{ tag }}
+ &gt; Tag: {{ tag }}
 {% if TAG_FEED_ATOM %}
 &brvbar; <a href="{{ FEED_DOMAIN }}/{{ TAG_FEED_ATOM|format(tag.slug) }}">Atom</a>
 {% endif %}

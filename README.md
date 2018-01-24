@@ -1,12 +1,6 @@
-# SVBHACK
+# SOLARIZEDHACK
 
-pelican-svbhack is a responsive theme for [Pelican](http://getpelican.com), it is my hack of a svbtle-like theme.
-
-## DEMO
-
-You can see the [theme in action](http://www.giuliofidente.com/).
-
-![theme screenshot](https://raw.github.com/gfidente/pelican-svbhack/master/screenshot.png)
+pelican-solarizedhack is a responsive theme for [Pelican](http://getpelican.com), based on svbtle's layout and the solarized color scheme. This was forked from [pelican-svbhack by gfidente](https://github.com/gfidente/pelican-svbhack) and modified to have a different color scheme and arrangement of text that I find aesthetically pleasing.
 
 ## FEATURES
 
@@ -22,7 +16,7 @@ You can see the [theme in action](http://www.giuliofidente.com/).
 
 ## INSTALL
 
-Clone the [repository](https://github.com/gfidente/pelican-svbhack), edit your `pelicanconf.py` and modify the `THEME` variable to make it point to the downloaded theme location.
+Clone the [repository](https://github.com/delucks/pelican-solarizedhack), edit your `pelicanconf.py` and modify the `THEME` variable to make it point to the downloaded theme location.
 
 ## PELICANCONF.PY
 
@@ -30,26 +24,21 @@ Supports a number of common global variables but patches are welcomed if you nee
 
 - `GOOGLE_ANALYTICS` to use Google Analytics, set this var to your UA-XYZ code
 
-- `USER_LOGO_URL` to replace the logo placeholder, put your logo in content/images/your_logo.png and make this var point to `SITEURL + '/static/images/your_logo.png'`
-
-- `ROUND_USER_LOGO` set this to `True` to crop your logo to a circle and add a black border
-
 - `DISQUS_SITENAME` set this to your Disqus sitename to enable disqus comments in articles
 
 - `TAGLINE` some text rendered right below the logo
-
-- `INTERNET_DEFENSE_LEAGUE` set this to `True` if you want to enable the [Internet Defense League](http://internetdefenseleague.org) code
 
 When developing locally, you may want to set the following variable: `SITEURL = http://localhost:8000`
 
 ## MODIFICATIONS
 
-- Accent color can be changed by editing `@accent` in `./static/css/style.less`.
-- A different Pygmentize theme can be used by editing `./Makefile` and running `make pygments`.
+- Less styling has been removed, modify the css directly to change things around
 
 ## AUTHOR
 
-pelican-svbhack is authored by Giulio Fidente.
+pelican-solarizedhack is authored by Jamie Luck (delucks).
+
+Credit for the original design goes to gfidente. Credit for the solarized dark theme used in code highlights goes to [nicolashery](https://gist.github.com/nicolashery/5765395).
 
 ## LICENSE
 
